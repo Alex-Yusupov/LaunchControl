@@ -46,5 +46,6 @@ showTime()
                 document.getElementById('bttn_trac') .src='./assets/images/bttn_trac_0.PNG';
                 document.getElementById('trac') .src='./assets/images/trac1.PNG';
             }
+            
         }  
         

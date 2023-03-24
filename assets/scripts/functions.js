@@ -35,15 +35,16 @@ showTime()
                 document.getElementById('batt') .src='./assets/images/batt1.PNG';
             }
         }  
-        var trac = 0;
+        var charge = 0;
         function traccont() {
-            if(trac == 0){
+            if(charge == 0){
                 charge = 1; 
                 document.getElementById('bttn_trac') .src='./assets/images/bttn_trac_1.PNG';
                 document.getElementById('trac') .src='./assets/images/trac0.PNG';
             } else{
-                trc = 0; 
+                charge = 0; 
                 document.getElementById('bttn_trac') .src='./assets/images/bttn_trac_0.PNG';
                 document.getElementById('trac') .src='./assets/images/trac1.PNG';
             }
         }  
+        

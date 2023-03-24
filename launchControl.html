@@ -8,21 +8,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img id="dash" src="./assets/images/dash.PNG" alt="A sports car dashboard" />
+    <img id="dash" src="./assets/images/dash.PNG" onclick="shift" alt="A sports car dashboard" />
     <img id="gas" src="./assets/images/gas0.png" onclick="getGas" alt="The gas gauge" />
-    <img id="batt" src="./assets/images/batt0.PNG" alt="The battery gauge" />
-    <img id="brake" src="./assets/images/p1.PNG" alt="parking brake indicator" />
-    <img id="trac" src="./assets/images/trac0.PNG" alt="traction control indicator" />
-    <img id="launch" src="./assets/images/lca0.PNG" alt="launch control indicator" />
+    <img id="batt" src="./assets/images/batt0.PNG" onclick="crgbatt" alt="The battery gauge" />
+    <img id="brake" src="./assets/images/p1.PNG" onclick="park" alt="parking brake indicator" />
+    <img id="trac" src="./assets/images/trac0.PNG" onclick="traccont" alt="traction control indicator" />
+    <img id="launch" src="./assets/images/lca0.PNG" onclick="start" alt="launch control indicator" />
     <div id="mode">PARK</div>
     <div id="temp">98 F&deg;</div>
     <div id="time"></div>
-    <img src="./assets/images/bttn_park_1.PNG" id="bttn_park" onclick="" alt="parking brake button">
-    <img src="./assets/images/bttn_trac_1.PNG" id="bttn_trac" onclick="" alt="traction control button">
-    <img src="./assets/images/bttn_batt_0.PNG" id="bttn_batt" onclick="" alt="charge battery button">
+    <img src="./assets/images/bttn_park_1.PNG" id="bttn_park" onclick="park()" alt="parking brake button">
+    <img src="./assets/images/bttn_trac_1.PNG" id="bttn_trac" onclick="traccont()" alt="traction control button">
+    <img src="./assets/images/bttn_batt_0.PNG" id="bttn_batt" onclick="crgbatt()" alt="charge battery button">
     <img src="./assets/images/bttn_gas_0.PNG" id="bttn_gas" onclick="getGas()" alt="fill gas button">
-    <img src="./assets/images/shifter.png" id="bttn_shifter" onclick="" alt="moade shifter">
-    <img src="./assets/images/start.PNG" id="bttn_start" onclick="" alt="start button">
+    <img src="./assets/images/shifter.png" id="bttn_shifter" onclick="shift()" alt="moade shifter">
+    <img src="./assets/images/start.PNG" id="bttn_start" onclick="start()" alt="start button">
     <div id="msg"></div>
 </body>
     <script src="./assets/scripts/clock.js"></script>

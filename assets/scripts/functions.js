@@ -27,12 +27,12 @@ var gasLevel = 0, parked = 1, charge = 0, trac = 1, intMode = 0;
         function crgbatt() {
             if(charge == 0){
                 charge = 1; 
-                document.getElementById('bttn_batt') .src='./assets/images/bttn_batt_0.PNG';
-                document.getElementById('batt') .src='./assets/images/batt0.PNG';
-            } else{
-                charge = 0; 
                 document.getElementById('bttn_batt') .src='./assets/images/bttn_batt_1.PNG';
                 document.getElementById('batt') .src='./assets/images/batt1.PNG';
+            } else{
+                charge = 0;
+                document.getElementById('bttn_batt') .src='./assets/images/bttn_batt_0.PNG';
+                document.getElementById('batt') .src='./assets/images/batt0.PNG'; 
             }
         }  
         function traccont() {
@@ -75,10 +75,4 @@ var gasLevel = 0, parked = 1, charge = 0, trac = 1, intMode = 0;
             }
         }
 
-        var lcOK = 1
-        if(parked == 1){
-        lcOK = 0
-        status.innerText = 'NO BRAKE';
-        }
-        document.getElementById('msg')
        
